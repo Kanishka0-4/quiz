@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Libre Baskerville', serif;
+    box-sizing: border-box;
+}
+body{
+    background: rgb(102, 61, 165);
+}
+.app{
+    background: #fff;
+    width: 90% ;
+    max-width: 700px;
+    margin: 100px auto 0;
+    border-radius: 10px;
+    padding: 30px;
+
+}
+.app h1{
+    font-size: 25px;
+    color: rgba(128, 0, 128, 0.814);
+    font-weight: 600;
+    border-bottom: 1px solid rgb(122, 15, 141);
+    padding-bottom: 30px;
+}
+.quiz{
+    padding: 20px 0;
+}
+.quiz h2{
+    font-size: 18px;
+    color: blueviolet;
+    font-weight: 600;
+}
+.btn{
+    background: #fff;
+    color: rgb(54, 5, 62) ;
+    font-weight: 500;
+    width:100% ;
+    border: 1px solid rgb(54, 5, 62);
+    padding: 10px;
+    margin: 10px 0;
+    text-align: left;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ;
+}
+.btn:hover{
+    background: rgb(54, 5, 62);
+    color: white;
+}
+#next-btn{
+    background: rgb(122, 15, 141);
+    color: white;
+    font-weight: 500;
+    width: 150px;
+    border: 0;
+    padding: 10px;
+    margin: 20px auto 0;
+    border-radius: 4px;
+    cursor: pointer;
+
+}
+/* Add CSS for the Next button */
+#next-btn {
+    background-color: #691fe8f7; /* Blue background color */
+    color: #fff; /* White text color */
+    padding: 10px 20px; /* Padding */
+    border: none; /* Remove border */
+    
+    cursor: pointer; /* Change cursor to pointer on hover */
+   
+    position: bottom;
+}
+
+#next-btn:hover {
+    background-color: #6348ab; /* Darker blue background color on hover */
+}
