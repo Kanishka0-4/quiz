@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function() {
   
         
       const questions = [
-       {
+          {
         question: "What is the band gap of a semiconductor material?",
         options: ["The energy difference between the valence band and the conduction band.", "The energy difference between the Fermi level and the valence band.", "The energy difference between the Fermi level and the conduction band.", "The energy difference between the top of the valence band and the bottom of the conduction band."],
         correctAnswer: "The energy difference between the top of the valence band and the bottom of the conduction band."
