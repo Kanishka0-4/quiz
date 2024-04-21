@@ -1,137 +1,69 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const questions = [
-        {
-            question: "Half-lives of two radioactive substances A and B are respectively 20 min and 40 min. Initially the samples of A and B have equal number of nuclei. After 80 min the ratio of remaining number of A and B nuclei is: ",
-            options: ["1:16", "4:1", "1:4", "1:1"],
-            correctAnswer: "1:16"
-        },
-        {
-            question: " Phenyl isocyanides are prepared from which of the following reaction?  ",
-            options: ["Rosemund reaction", "Reimcr-Tiemann reaction", "carbylamine reaction", "wurtz reaction"],
-            correctAnswer: "carbylamine reaction"
-        },
-        {
-            question: "The RTF region enables the plasmid to:",
-            options: ["be transmitted to other bacteria by conjugation", "undergo transformation", "replicate in the host cell", "code for enzymes that inactivate specific drugs"],
-            correctAnswer: "be transmitted to other bacteria by conjugation"
-        },
-        {
-            question: " Half-life of a radioactive substance is 12.5 h and its mass is 256 g. After what time, the amount of remaining substance is 1g?",
-            options: ["75 h", "100 h", "125 h", "150 h"],
-            correctAnswer: "75 h"
-        },
-         {
-            question: "In plants, inulin and pectin are:",
-            options: ["excretory material", "wastes", "reserve materials", "insect-attracting material"],
-            correctAnswer: "reserve materials"
-        }, {
-            question: "Which of the following does not constitute habitat destruction?",
-            options: ["Filling in wetlands", "logging", "Burning forests", "Fishing"],
-            correctAnswer: "Fishing"
-        },
-         {
-            question: "Modifications by germ line gene therapy are heritable as:",
-            options: ["the functional gene is incorporated into their genome", "the functional gene is incorporated into one of the gene", "the functional gene is incorporated into somatic cells.", "All of the above"],
-            correctAnswer: "the functional gene is incorporated into their genome"
-        },
-         {
-            question: " The electrolytic reduction of nitrobenzene in strongly acidic medium produces:",
-            options: ["azoxybenzene", "p-aminophenol", "azobenzene", "aniline"],
-            correctAnswer: "p-aminophenol"
-        },
-         {
-            question: "In the treatment of SCID, cDNA is introduced into a patient's cells using.............as a vector:",
-            options: ["E coli", "Retrovirus", "Bacillus thuringiensis", "agrobacterium"],
-            correctAnswer: "Retrovirus"
-        },
-         {
-            question: "In microinjection method, the DNA is incorporated into host cell by using:",
-            options: ["Micro-pipettes", "Micro-needles", "High voltage electric impulse", "Both [a] and [b]"],
-            correctAnswer: "Both [a] and [b]"
-        }, {
-            question: "In terrestrial ecosystem, maximum energy is present in:",
-            options: ["T3", "T2", "T1", "T4"],
-            correctAnswer: "T1"
-        },
-        {
-            question: "The binding energy per nucleon in deuterium and helium nuclei are 1.1 MeV and 7.0 MeV, respectively. When two deuterium nuclei fuse to form a helium nucleus the energy released in the fusion is   ",
-            options: ["23.6 MeV", "2.2 MeV", "28.0 MeV", "30.2 MeV"],
-            correctAnswer: "23.6 MeV"
-        },{
-            question: " Electrolytic reduction of nitrobenzene in weakly acidic medium gives",
-            options: ["aniline", "nitrosobenzene", "N-phenylhydroxylamine", "p-hydroxyaniline"],
-            correctAnswer: "nitrosobenzene"
-        },{
-            question: "Which among the following is likely to have the highest levels of DDT depositions in its body?",
-            options: ["Eel", "Crab", "Seagull", "Phytoplankton"],
-            correctAnswer: "Seagull"
-        },{
-            question: "Which was the first product contributed to human kind by science of biotechnology in early 1970's?",
-            options: ["Somatotropin", "Erythropoietin", "Insulin", "Cytokines"],
-            correctAnswer: "Somatotropin"
-        },{
-            question: "A T4 bacteriophage has a gene for the enzyme, lysozyme. The function of this enzyme is to digest",
-            options: ["Golgi", "Cell membrane", "Cell Wall", "Plasmid"],
-            correctAnswer: "Cell Wall"
-        },{
-            question: "When primary amine reacts with chloroform in ethanolic KOH then the product is",
-            options: ["alcohol", "cyanide", "aldehyde", "isocyanide"],
-            correctAnswer: "isocyanide"
-        },{
-            question: "In Bohr's model, if the radius of the first orbit is r0, what is the radius of the third orbit?",
-            options: ["3r0", "9r0", "r0/9", "r0"],
-            correctAnswer: "9r0"
-        },{
-            question: " Cellulose, the most important constituent of plant cell wall is made up of:",
-            options: ["branched chain of glucose molecules linked by α, 1,6 glycosidic bond at the site of branching", "unbranched chain of glucose molecules linked by α, 1,4 glycosidic bond", "branched chain of glucose molecules linked by β, 1, 4 glycosidic bond in straight chain and α, 1, 6 glycosidic bond at the site of branching", "unbranched chain of glucose molecules linked by β, 1, 4 glycosidic bond"],
-            correctAnswer: "unbranched chain of glucose molecules linked by β, 1, 4 glycosidic bond"
-        },{
-            question: " Which one of the following pairs is not correctly matched?",
-            options: ["Vitamin B6  Loss of appetite", "Vitamin B1  Beri-beri", "Vitamin B2  Pellagra", "Vitamin B12 Pernicious anaemia"],
-            correctAnswer: "Vitamin B2  Pellagra"
-        },{
-            question: "If in a nuclear fusion process, the masses of the fusing nuclei be m1and m2 and the mass of the resultant nucleus be m3, then",
-            options: ["m3=m1+m2", "m3=|m1-m2|", "m3<(m1+m2)", "m3>(m1+m2)"],
-            correctAnswer: "m3=m1+m2"
-        },
-        {
-            question: "Polyploidy can result from:",
-            options: ["Double fertilisation", "Polyspermy", "Diploid gametes", "All of these"],
-            correctAnswer: "Diploid gametes"
-        },{
-            question: "Nucleotide are building blocks of nucleic acids, nucleotide is a composite molecule formed by:",
-            options: ["(base-sugar-phosphate)", "base-sugar-phosphate", "base-sugar-OH", "sugar-phosphate"],
-            correctAnswer: "base-sugar-phosphate"
-        },{
-            question: "Strains of Bacillus thuringiensis are used in producing:",
-            options: ["Bioinsecticidal plants", "Biomineralisation", "Biometallurgical techniques", "Biofertilisers"],
-            correctAnswer: "Bioinsecticidal plants"
-        },{
-            question: "A nucleic acid probe might be used to",
-            options: ["insert genes into a host cell.", "splice pieces of DNA", "make DNA for gene cloning.", "identify complementary segments present in nucleic acid sequence."],
-            correctAnswer: "identify complementary segments present in nucleic acid sequence."
-        },{
-            question: "A sample of radioactive elements contains 4×10^10 active nuclei. If half-life of element is 10 days, then the number of decayed nuclei after 30 days is:",
-            options: ["0.5×10^10", " 3.5×10^10", " 2×10^10", "1×1010"],
-            correctAnswer: "3.5×10^10"
-        },{
-            question: "A GM crop is transgenic. It can be harmful because it may cause:",
-            options: ["allergies and toxicity.", "incorporation of antibiotic resistance in human beings.", "disturbance in metabolism due to enzyme for antibiotic resistance.", "All of the above"],
-            correctAnswer: "All of the above"
-        },{
-            question: "The final product formed when Methyl  amine is treated with {NaNO_2} and {HCl} is",
-            options: ["Diazomethane", "Methylalcohol", "Methylcyanide", "Nitromethane"],
-            correctAnswer: "Methylalcohol"
-        },{
-            question: "Modifications by germ line gene therapy are heritable as",
-            options: ["the functional gene is incorporated into their genome.", "the functional gene is incorporated into somatic cells.", "the functional gene is incorporated into one of the gene.", "All of the above"],
-            correctAnswer: "the functional gene is incorporated into their genome."
-        },{
-            question: "Which one of the following pairs of terms/names means one and the same thing?",
-            options: ["Cistron-triplet", "Codon-gene", "DNA fingerprinting-DNA profiling", "Gene pool of an organism-genome"],
-            correctAnswer: "DNA fingerprinting-DNA profiling"
-        },
-    ];
+  
+        
+      const questions = [
+    {
+        question: "In a p-type semiconductor, what type of charge carriers are dominant?",
+        options: ["Electrons", "Holes", "Protons", "Neutrons"],
+        correctAnswer: "Holes"
+    },
+    {
+        question: "Which of the following statements is true regarding intrinsic semiconductors?",
+        options: ["They have a high density of impurities.", "They conduct electricity due to the presence of impurities.", "They have an equal number of electrons and holes.", "They have a high electrical conductivity at room temperature."],
+        correctAnswer: "They have an equal number of electrons and holes."
+    },
+    {
+        question: "A particle moves along the x-axis with a velocity given by v = 5t - 3t^2 m/s. What is its acceleration at t = 2 seconds?",
+        options: ["1 m/s²", "-7 m/s²", "-1 m/s²", "7 m/s²"],
+        correctAnswer: "-7 m/s²"
+    },
+    {
+        question: "A car accelerates uniformly from rest to a speed of 20 m/s in 5 seconds. What is the distance traveled by the car during this time?",
+        options: ["50 m", "100 m", "125 m", "150 m"],
+        correctAnswer: "125 m"
+    },
+    {
+        question: "Which of the following is a characteristic of GOC (General Organic Chemistry)?",
+        options: ["It studies the bonding patterns and molecular structures of organic compounds.", "It focuses on the reactivity and behavior of organic compounds.", "It deals with the classification and nomenclature of organic compounds.", "All of the above"],
+        correctAnswer: "All of the above"
+    },
+    {
+        question: "What is the atomic number of carbon?",
+        options: ["6", "8", "12", "14"],
+        correctAnswer: "6"
+    },
+    {
+        question: "Which of the following elements is a noble gas?",
+        options: ["Oxygen", "Neon", "Chlorine", "Sodium"],
+        correctAnswer: "Neon"
+    },
+    {
+        question: "Which of the following is a characteristic of the periodic table?",
+        options: ["It arranges elements in order of increasing atomic number.", "It groups elements with similar properties into columns.", "It provides information about the atomic structure of elements.", "All of the above"],
+        correctAnswer: "All of the above"
+    },
+    {
+        question: "Which structural level of organization in animals involves the arrangement of tissues to form organs?",
+        options: ["Cellular level", "Tissue level", "Organ level", "Organ system level"],
+        correctAnswer: "Organ level"
+    },
+    {
+        question: "During breathing and exchange of gases, where does the exchange of oxygen and carbon dioxide primarily occur?",
+        options: ["Bronchioles", "Alveoli", "Trachea", "Pharynx"],
+        correctAnswer: "Alveoli"
+    },
+    {
+        question: "Which of the following is considered the basic unit of life?",
+        options: ["Cell", "Tissue", "Organ", "Organ system"],
+        correctAnswer: "Cell"
+    },
+    {
+        question: "Which molecule is responsible for the transmission of hereditary traits in organisms?",
+        options: ["DNA", "RNA", "Protein", "Carbohydrate"],
+        correctAnswer: "DNA"
+    }
+];
+
 
     let currentQuestionIndex = 0;
     let score=0;
