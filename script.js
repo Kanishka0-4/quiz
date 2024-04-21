@@ -26,8 +26,7 @@ document.addEventListener("DOMContentLoaded", function() {
         question: "What happens to the resistance of a conductor when its temperature increases?",
         options: ["Increases", "Decreases", "Remains constant", "Depends on the material"],
         correctAnswer: "Increases"
-    }
-],
+    },
 {
         question: "What is hyperconjugation in organic chemistry?",
         options: ["The interaction of σ electrons with π electrons", "The interaction of π electrons with σ electrons", "The overlap of atomic orbitals", "The rearrangement of σ and π bonds"],
@@ -52,8 +51,7 @@ document.addEventListener("DOMContentLoaded", function() {
         question: "Which of the following is a Lewis acid?",
         options: ["NH3", "H2O", "BF3", "CH4"],
         correctAnswer: "BF3"
-    }
-],
+    },
 {
         question: "What is the function of the alveoli in the respiratory system?",
         options: ["To filter out dust and particles from the air.", "To warm and humidify the air.", "To exchange oxygen and carbon dioxide with the blood.", "To produce mucus to trap pathogens."],
